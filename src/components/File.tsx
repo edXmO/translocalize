@@ -7,7 +7,7 @@ type IFile = {
 
 export default function File({ id, name, size, onCancel }: IFile) {
    return (
-      <div className="flex flex-row justify-between items-center w-96 pr-4 py-2 px-4 rounded-lg bg-slate-200 shadow-lg mb-4 place-self-center">
+      <div className="flex flex-row justify-between items-center w-96 pr-4 py-2 px-4 rounded-lg bg-white shadow-lg mb-4 place-self-center">
          <p>{name}</p>
          <p>{`${size / 1000}KB`}</p>
          <button

@@ -39,9 +39,9 @@ export default function FileInput(
    }, [value])
 
    return (
-      <div className="bg-transparent rounded-xl">
-         <label className="flex filter  bg-gradient-to-b from-teal-400  to-blue-800 z-2 items-center h-8 w-22 px-10 py-6 rounded-xl cursor-pointer shadow-md z-10">
-            <p className="text-white font-bold text-lg z-20">Select files</p>
+      <div className="flex md:w-48 bg-transparent rounded-lg mb-4 md:mr-4">
+         <label className="flex w-full filter  bg-gradient-to-b from-teal-400  to-blue-800 z-2 items-center h-8 w-22 pl-4 py-6 rounded-xl cursor-pointer shadow-md z-10">
+            <p className="text-white text-left text-md z-20 font-medium">Select files</p>
             <input 
                {...rest} 
                accept="application/JSON"

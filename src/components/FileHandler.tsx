@@ -1,5 +1,6 @@
 import { IFile } from '.'
 import FileInput from './FileInput'
+import SelectLanguage from './SelectLanguage'
 
 type IFileHandler= {
    uploadedFiles: IFile[],
@@ -20,13 +21,14 @@ export default function FileHandler(
 
    return (
       <>
-         <div className="absolute -my-2 shadow-md self-center top-0 -mt-6 rounded-2xl z-30 overflow-show">
+         <div className="absolute flex md:flex-row flex-col -my-2 self-center top-0 -mt-10 rounded-2xl z-30 overflow-show">
             <FileInput 
                value={uploadedFiles}
                onChange={onFilesSelect}
                setEncodedFiles={setEncodedFiles}
                setLoading={setLoading}
                />
+            <SelectLanguage />
          </div>
       </>
    )
